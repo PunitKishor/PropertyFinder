@@ -15,6 +15,7 @@ import {
   StackNavigator,
 } from 'react-navigation';
 import SearchPage from './SearchPage';
+import SearchResults from './SearchResults';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -26,5 +27,6 @@ const instructions = Platform.select({
 
 const App = StackNavigator({
   Home: { screen: SearchPage },
+  Results: { screen: SearchResults },
 });
 export default App;
